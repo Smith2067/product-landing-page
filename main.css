@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*Header and Navbar~~~~~~~~~~~~~~~~~~~~~~*/
+#header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+}
+
+#logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+}
+
+#logo-text{
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+#nav-bar{
+    margin-right: 2%;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    border: solid black 2px;
+    padding: 4px;
+    border-radius: 10px;
+}
+/*End Header and Navbar~~~~~~~~~~~~~~~~~~*/
+
+/*Email Allergy Prompt~~~~~~~~~~~~~~~~~~~*/
+#email-prompt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email-heading{
+    max-width: 600px;
+}
+/*End Email Allergy Prompt~~~~~~~~~~~~~~~*/
+
+/*About Product Section~~~~~~~~~~~~~~~~~~*/
+.product-info-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.product-info{
+    margin-left: 20px;
+}
+
+.product-info-icon{
+    width: 220px;
+    margin-left: 2%;
+}
+/*End About Product Section~~~~~~~~~~~~~~*/
+
+/*Select A Plan Section~~~~~~~~~~~~~~~~~~*/
+#plans{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.plan-box{
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+/*End Select A Plan Section~~~~~~~~~~~~~~*/
+
+/*Media Queries~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media only screen and (max-width: 1400px) {
+    .plan-box{
+        width: 300px;
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .plan-box{
+        width: 250px;
+        height: 540px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #plans{
+        flex-direction: column;
+    }
+    .plan-box{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    #header{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 140px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    #video{
+        width: 467px;
+        height: 263px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    #video{
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #video{
+        width: 350px;
+        height: 197px;
+    }
+}
+
+@media only screen and (max-width: 372px) {
+    #video{
+        width: 311px;
+        height: 175px;
+    }
+}
+/*End Media Queries~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*Footer Section~~~~~~~~~~~~~~~~~~~~~~~~~*/
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgb(221, 221, 221);
+}
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+/*End Footer Section~~~~~~~~~~~~~~~~~~~~~*/
